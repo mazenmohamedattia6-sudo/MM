@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>أحجية القلب 🧩</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="neb neb-1"></div>
+<div class="neb neb-2"></div>
+
+<div class="page">
+  <header class="header">
+    <span class="eyebrow">أحجية من مازن</span>
+    <h1 class="title">أحجية القلب 🧩</h1>
+    <p class="header-sub">رتّبي القطع لحد ما القلب يكمل… وفيه رسالة مستنياكِ</p>
+  </header>
+
+  <div class="levels" id="levels">
+    <button class="lvl" data-n="3" type="button">سهل 3×3</button>
+    <button class="lvl active" data-n="4" type="button">متوسط 4×4</button>
+    <button class="lvl" data-n="5" type="button">صعب 5×5</button>
+  </div>
+
+  <div class="stats">
+    <div class="st"><span class="st-l">الحركات</span><b id="moves">0</b></div>
+    <div class="st"><span class="st-l">الوقت</span><b id="time">0:00</b></div>
+    <div class="st"><span class="st-l">في مكانها</span><b id="correct">0</b></div>
+  </div>
+
+  <div class="board-wrap">
+    <div class="board" id="board"></div>
+    <div class="peek" id="peek"></div>
+  </div>
+  <p class="tip" id="tip">دوسي على قطعة وبعدين على قطعة تانية يتبدلوا</p>
+
+  <div class="actions">
+    <button class="btn" id="btn-hint" type="button">بصّة على الصورة 👀</button>
+    <button class="btn ghost" id="btn-shuffle" type="button">اخلطي من الأول 🔀</button>
+    <button class="snd" id="snd" type="button" aria-label="الصوت">🔊</button>
+  </div>
+
+  <div class="reveal" id="reveal">
+    <div class="rv-icon">💗</div>
+    <h2 class="rv-title">كمّلتِ القلب يا ملك!</h2>
+    <p class="rv-text">كل حاجة في الدنيا ليها مكانها الصح…<br>وأنا مكاني الصح جنبك.<br>إنتِ مصدر أماني ومصدر طمأنتي،<br>وبحبك أكتر من أي حاجة في حياتي.</p>
+    <p class="rv-sign">— مازن، أبو ليلي 🌙</p>
+    <p class="rv-stat" id="rv-stat"></p>
+    <button class="btn" id="btn-again" type="button">العبي تاني 🔁</button>
+  </div>
+
+  <p class="footer">مازن — أبو ليلي 🌙</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
